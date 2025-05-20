@@ -25,6 +25,8 @@ public:
     Suit GetSuit() const;
     CardValue GetCardVal() const;
     string ToString() const;
+    string GetSuitAscii() const;
+    string GetCardValAscii() const;
     
     static Suit ParseSuit(const string& input);
     static CardValue ParseValue(const string& input);

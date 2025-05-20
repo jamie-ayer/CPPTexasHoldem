@@ -28,10 +28,29 @@ Card::CardValue Card::GetCardVal() const {
     return cardVal;
 }
 
-// ToString function (takes suit and value enums and converts to string)
-string Card::ToString() const {
-    string cardName;
+// Getter for Suit Ascii
+string Card::GetSuitAscii() const {
     string cardSuit;
+    switch(suit){
+        case Suit::DIAMONDS:
+            cardSuit = "\u2666";
+            break;
+        case Suit::CLUBS:
+            cardSuit = "\u2663";
+            break;
+        case Suit::SPADES:
+            cardSuit = "\u2660";
+            break;
+        case Suit::HEARTS:
+            cardSuit = "\u2665";
+            break;
+    }
+    return cardSuit;
+}
+
+// Getter for Ascii of Value
+string Card::GetCardValAscii() const {
+    string cardName;
     
     // If else statements return string value of CardValue enum
     if (cardVal == CardValue::TWO) cardName = "2";
@@ -48,24 +67,24 @@ string Card::ToString() const {
     else if (cardVal == CardValue::KING) cardName = "K";
     else if (cardVal == CardValue::ACE) cardName = "A";
     
-    // Switch statement for return string value of Suit enum
-    switch(suit){
-        case Suit::DIAMONDS:
-            cardSuit = "\u2666";
-            break;
-        case Suit::CLUBS:
-            cardSuit = "\u2663";
-            break;
-        case Suit::SPADES:
-            cardSuit = "\u2660";
-            break;
-        case Suit::HEARTS:
-            cardSuit = "\u2665";
-            break;
-    }
-    
-    return "|" + cardName + cardSuit + "|";
+    return cardName;
 }
+
+// ToString function (takes suit and value enums and converts to string)
+string Card::ToString() const {
+    string cardName;
+    string cardSuit;
+    
+    cardName = GetCardValAscii();
+    cardSuit = GetSuitAscii();
+    
+    // Fits all cards in 4 spaces
+    if(cardName.length() > 1) return "|" + cardName + cardSuit + "|";
+    return "| " + cardName + cardSuit + "|";
+}
+
+
+// Below functions are for testing
 
 // Map of string to suit
 const unordered_map<string, Card::Suit> Card::suitMap = {

@@ -33,7 +33,9 @@ void Deck::PrintDeck(){
 }
 
 Card Deck::DealSingleCard(){
+    cout << "\nDealing single card" << endl;
     Card backCard = cards.back();
+    cout << "Card dealt: " << backCard.ToString() << endl;
     cards.pop_back();
     return backCard;
 }
@@ -45,18 +47,6 @@ void Deck::Shuffle(){
     mt19937 g(rd());
     
     shuffle(cards.begin(), cards.end(), g);
-    
-    // First thought was the code below, I learned C11 had newer better functions above
-    /*
-    srand(static_cast<unsigned int>(time(nullptr)));
-    
-    for(int i = 0; i < cards.size(); i++){
-        int j = i + (rand() % (cards.size() - i));
-        Card tmpCard = cards[i];
-        cards[i] = cards[j];
-        cards[j] = tmpCard;
-        swap(cards[i], cards[j]); // Built in swap I didn't know c++ had
-    } */
 }
 
 bool Deck::CheckDeckEmpty(){
