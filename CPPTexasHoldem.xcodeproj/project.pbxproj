@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3BCEB4BC2DDCF3B900B5B17C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEB4BB2DDCF3B900B5B17C /* main.cpp */; };
 		3BCEB4C42DDCFBAB00B5B17C /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEB4C22DDCFBAB00B5B17C /* Card.cpp */; };
+		3BCEB4C72DDD156B00B5B17C /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEB4C52DDD156B00B5B17C /* Deck.cpp */; };
+		3BCEB4CA2DDD282000B5B17C /* Hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEB4C82DDD282000B5B17C /* Hand.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		3BCEB4BB2DDCF3B900B5B17C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3BCEB4C22DDCFBAB00B5B17C /* Card.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
 		3BCEB4C32DDCFBAB00B5B17C /* Card.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
+		3BCEB4C52DDD156B00B5B17C /* Deck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
+		3BCEB4C62DDD156B00B5B17C /* Deck.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Deck.hpp; sourceTree = "<group>"; };
+		3BCEB4C82DDD282000B5B17C /* Hand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Hand.cpp; sourceTree = "<group>"; };
+		3BCEB4C92DDD282000B5B17C /* Hand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hand.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				3BCEB4BB2DDCF3B900B5B17C /* main.cpp */,
 				3BCEB4C22DDCFBAB00B5B17C /* Card.cpp */,
 				3BCEB4C32DDCFBAB00B5B17C /* Card.hpp */,
+				3BCEB4C52DDD156B00B5B17C /* Deck.cpp */,
+				3BCEB4C62DDD156B00B5B17C /* Deck.hpp */,
+				3BCEB4C82DDD282000B5B17C /* Hand.cpp */,
+				3BCEB4C92DDD282000B5B17C /* Hand.hpp */,
 			);
 			path = CPPTexasHoldem;
 			sourceTree = "<group>";
@@ -124,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BCEB4CA2DDD282000B5B17C /* Hand.cpp in Sources */,
+				3BCEB4C72DDD156B00B5B17C /* Deck.cpp in Sources */,
 				3BCEB4BC2DDCF3B900B5B17C /* main.cpp in Sources */,
 				3BCEB4C42DDCFBAB00B5B17C /* Card.cpp in Sources */,
 			);

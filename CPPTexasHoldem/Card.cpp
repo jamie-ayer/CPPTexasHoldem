@@ -34,37 +34,37 @@ string Card::ToString() const {
     string cardSuit;
     
     // If else statements return string value of CardValue enum
-    if (cardVal == CardValue::TWO) cardName = "Two";
-    else if (cardVal == CardValue::THREE) cardName = "Three";
-    else if (cardVal == CardValue::FOUR) cardName = "Four";
-    else if (cardVal == CardValue::FIVE) cardName = "Five";
-    else if (cardVal == CardValue::SIX) cardName = "Six";
-    else if (cardVal == CardValue::SEVEN) cardName = "Seven";
-    else if (cardVal == CardValue::EIGHT) cardName = "Eight";
-    else if (cardVal == CardValue::NINE) cardName = "Nine";
-    else if (cardVal == CardValue::TEN) cardName = "Ten";
-    else if (cardVal == CardValue::JACK) cardName = "Jack";
-    else if (cardVal == CardValue::QUEEN) cardName = "Queen";
-    else if (cardVal == CardValue::KING) cardName = "King";
-    else if (cardVal == CardValue::ACE) cardName = "Ace";
+    if (cardVal == CardValue::TWO) cardName = "2";
+    else if (cardVal == CardValue::THREE) cardName = "3";
+    else if (cardVal == CardValue::FOUR) cardName = "4";
+    else if (cardVal == CardValue::FIVE) cardName = "5";
+    else if (cardVal == CardValue::SIX) cardName = "6";
+    else if (cardVal == CardValue::SEVEN) cardName = "7";
+    else if (cardVal == CardValue::EIGHT) cardName = "8";
+    else if (cardVal == CardValue::NINE) cardName = "9";
+    else if (cardVal == CardValue::TEN) cardName = "10";
+    else if (cardVal == CardValue::JACK) cardName = "J";
+    else if (cardVal == CardValue::QUEEN) cardName = "Q";
+    else if (cardVal == CardValue::KING) cardName = "K";
+    else if (cardVal == CardValue::ACE) cardName = "A";
     
     // Switch statement for return string value of Suit enum
     switch(suit){
         case Suit::DIAMONDS:
-            cardSuit = "Diamonds";
+            cardSuit = "\u2666";
             break;
         case Suit::CLUBS:
-            cardSuit = "Clubs";
+            cardSuit = "\u2663";
             break;
         case Suit::SPADES:
-            cardSuit = "Spades";
+            cardSuit = "\u2660";
             break;
         case Suit::HEARTS:
-            cardSuit = "Hearts";
+            cardSuit = "\u2665";
             break;
     }
     
-    return cardName + " of " + cardSuit;
+    return "|" + cardName + cardSuit + "|";
 }
 
 // Map of string to suit

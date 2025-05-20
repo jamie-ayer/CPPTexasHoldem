@@ -18,8 +18,7 @@ public:
     enum class Suit { DIAMONDS, CLUBS, SPADES, HEARTS };
     enum class CardValue {
         TWO = 2, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT,
-        NINE, TEN, JACK = 10, QUEEN = 10, KING = 10, ACE = 11
-    };
+        NINE, TEN, JACK, QUEEN, KING, ACE};
 
     Card(Suit suit, CardValue cardVal);
 
