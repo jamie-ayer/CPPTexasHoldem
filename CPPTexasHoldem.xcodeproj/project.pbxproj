@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3BCEB4BC2DDCF3B900B5B17C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEB4BB2DDCF3B900B5B17C /* main.cpp */; };
+		3BCEB4C42DDCFBAB00B5B17C /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEB4C22DDCFBAB00B5B17C /* Card.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		3BCEB4B82DDCF3B900B5B17C /* CPPTexasHoldem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPTexasHoldem; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCEB4BB2DDCF3B900B5B17C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3BCEB4C22DDCFBAB00B5B17C /* Card.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		3BCEB4C32DDCFBAB00B5B17C /* Card.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				3BCEB4BB2DDCF3B900B5B17C /* main.cpp */,
+				3BCEB4C22DDCFBAB00B5B17C /* Card.cpp */,
+				3BCEB4C32DDCFBAB00B5B17C /* Card.hpp */,
 			);
 			path = CPPTexasHoldem;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BCEB4BC2DDCF3B900B5B17C /* main.cpp in Sources */,
+				3BCEB4C42DDCFBAB00B5B17C /* Card.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
