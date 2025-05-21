@@ -12,7 +12,7 @@
 using namespace std;
 
 Hand::Hand(){
-    
+    folded = false;
 }
 
 void Hand::PrintHand(){
@@ -24,6 +24,7 @@ size_t Hand::CardAmount(){
 }
 
 void Hand::AddCards(const Card& card){
+    cout << "Dealing card" << endl;
     cardsInHand.push_back(card);
 }
 
@@ -34,8 +35,21 @@ void Hand::RemoveCards(){
 }
 
 bool Hand::HandHasCards(){
-    if(cardsInHand.empty()){
-        return false;
-    }
-    return true;
+    return !cardsInHand.empty();
+}
+
+vector<Card> Hand::GetHand(){
+    return cardsInHand;
+}
+
+bool Hand::IsActive(){
+    return !folded;
+}
+
+void Hand::Fold(){
+    folded = true;
+}
+
+void Hand::UnFold(){
+    folded = false;
 }

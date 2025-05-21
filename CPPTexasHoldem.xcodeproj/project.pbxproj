@@ -13,6 +13,7 @@
 		3BCEB4CA2DDD282000B5B17C /* Hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEB4C82DDD282000B5B17C /* Hand.cpp */; };
 		3BCEB4CD2DDD315B00B5B17C /* CardArt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEB4CB2DDD315B00B5B17C /* CardArt.cpp */; };
 		3BCEB4D02DDD419600B5B17C /* Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEB4CE2DDD419600B5B17C /* Table.cpp */; };
+		3BCEB4D32DDE5D4F00B5B17C /* HandEval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEB4D12DDE5D4F00B5B17C /* HandEval.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		3BCEB4CC2DDD315B00B5B17C /* CardArt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CardArt.hpp; sourceTree = "<group>"; };
 		3BCEB4CE2DDD419600B5B17C /* Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Table.cpp; sourceTree = "<group>"; };
 		3BCEB4CF2DDD419600B5B17C /* Table.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Table.hpp; sourceTree = "<group>"; };
+		3BCEB4D12DDE5D4F00B5B17C /* HandEval.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HandEval.cpp; sourceTree = "<group>"; };
+		3BCEB4D22DDE5D4F00B5B17C /* HandEval.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HandEval.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				3BCEB4CC2DDD315B00B5B17C /* CardArt.hpp */,
 				3BCEB4CE2DDD419600B5B17C /* Table.cpp */,
 				3BCEB4CF2DDD419600B5B17C /* Table.hpp */,
+				3BCEB4D12DDE5D4F00B5B17C /* HandEval.cpp */,
+				3BCEB4D22DDE5D4F00B5B17C /* HandEval.hpp */,
 			);
 			path = CPPTexasHoldem;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				3BCEB4CA2DDD282000B5B17C /* Hand.cpp in Sources */,
 				3BCEB4CD2DDD315B00B5B17C /* CardArt.cpp in Sources */,
 				3BCEB4C72DDD156B00B5B17C /* Deck.cpp in Sources */,
+				3BCEB4D32DDE5D4F00B5B17C /* HandEval.cpp in Sources */,
 				3BCEB4BC2DDCF3B900B5B17C /* main.cpp in Sources */,
 				3BCEB4C42DDCFBAB00B5B17C /* Card.cpp in Sources */,
 			);

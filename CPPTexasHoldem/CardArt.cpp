@@ -16,13 +16,19 @@ vector<string> CardArt::RenderCard(const Card& card) {
     string suit;
 
     vector<string> fullCardAscii;
-    fullCardAscii.push_back("┌─────┐");
-    fullCardAscii.push_back("|" + card.GetCardValAscii() + "    |");  
-    fullCardAscii.push_back("|     |");
-    fullCardAscii.push_back("|  " + card.GetSuitAscii() + "  |");
-    fullCardAscii.push_back("|     |");
-    fullCardAscii.push_back("|    " + card.GetCardValAscii() + "|");
-    fullCardAscii.push_back("└─────┘");
+    fullCardAscii.push_back("┌──────┐");
+    if(card.GetCardValAscii() != "10")
+        fullCardAscii.push_back("|" + card.GetCardValAscii() + "     |");
+    else
+        fullCardAscii.push_back("|" + card.GetCardValAscii() + "    |");
+    fullCardAscii.push_back("|      |");
+    fullCardAscii.push_back("|  " + card.GetSuitAscii() + "   |");
+    fullCardAscii.push_back("|      |");
+    if(card.GetCardValAscii() != "10")
+        fullCardAscii.push_back("|     " + card.GetCardValAscii() + "|");
+    else
+        fullCardAscii.push_back("|    " + card.GetCardValAscii() + "|");
+    fullCardAscii.push_back("└──────┘");
 
     return fullCardAscii;
 }
@@ -42,4 +48,9 @@ void CardArt::RenderMultCards(const vector<Card>& cards) {
         cout << "\n";
         
     }
+}
+
+string CardArt::FormatCardAscii(Card::CardValue value, Card::Suit suit) {
+    Card temp(suit, value);
+    return temp.ToString();
 }

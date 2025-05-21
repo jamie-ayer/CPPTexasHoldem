@@ -22,9 +22,14 @@ public:
     void AddCards(const Card& card);
     void RemoveCards();
     bool HandHasCards();
+    bool IsActive();
+    void Fold();
+    void UnFold();
+    vector<Card> GetHand();
     
 private:
     vector<Card> cardsInHand;
+    bool folded;
     
     
 };

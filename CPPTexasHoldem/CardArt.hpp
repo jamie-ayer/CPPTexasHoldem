@@ -17,6 +17,7 @@ using namespace std;
 namespace CardArt {
     vector<string> RenderCard(const Card& card);
     void RenderMultCards(const vector<Card>& cards);
+    string FormatCardAscii(Card::CardValue value, Card::Suit suit);
 }
 
 #endif

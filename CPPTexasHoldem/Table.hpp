@@ -19,10 +19,17 @@ class Table{
 public:
     Table();
     void AddCardToRiver();
+    void AddCardToRiver(int amount);
     void RemoveCardsFromRiver();
+    void AddCardsToDiscardPile(const vector<Card>& cards);
     void RenderRiver();
-    Deck gameDeck;
+    void AddCardsToRiver(vector<Card>& cards);
+    vector<Card> GetRiverCards();
+    Card DealCard();
+    size_t RiverAmount();
+    
 private:
+    Deck gameDeck;
     vector<Card> riverCards;
     vector<Card> discardPile;
 };

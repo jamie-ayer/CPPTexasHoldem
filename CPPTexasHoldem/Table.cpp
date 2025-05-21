@@ -23,14 +23,35 @@ void Table::AddCardToRiver(){
     riverCards.push_back(gameDeck.DealSingleCard());
 }
 
+void Table::AddCardToRiver(int amount){
+    for(int i = 0; i < amount; i++)
+        riverCards.push_back(gameDeck.DealSingleCard());
+}
+
+void Table::AddCardsToRiver(vector<Card>& cards){
+    riverCards = cards;
+}
+
+vector<Card> Table::GetRiverCards(){
+    return riverCards;
+}
+
+size_t Table::RiverAmount(){
+    return riverCards.size();
+}
+
 void Table::RemoveCardsFromRiver(){
     discardPile.insert(discardPile.end(), riverCards.begin(), riverCards.end());
     riverCards.clear();
 }
 
+void Table::AddCardsToDiscardPile(const vector<Card> &cards){
+    discardPile.insert(discardPile.end(), cards.begin(), cards.end());
+}
+
 void Table::RenderRiver(){
     
-    cout << "-------------------------------------" << endl;
+    cout << "------------------------------------------" << endl;
     if(riverCards.empty()){
         cout << "\n\n\n\n\n\n\n" << endl;
     }
@@ -38,7 +59,11 @@ void Table::RenderRiver(){
         CardArt::RenderMultCards(riverCards);
     }
     
-    cout << "-------------------------------------" << endl;
+    cout << "------------------------------------------" << endl;
+}
+
+Card Table::DealCard(){
+    return gameDeck.DealSingleCard();
 }
 
 
